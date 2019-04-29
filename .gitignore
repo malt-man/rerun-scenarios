@@ -1,0 +1,11 @@
+# Ignore IntelliJ package
+*.idea/
+*.iml
+
+# Project build directory
+.classpath
+.project
+.settings/
+chromedriver
+*target/
+*out/

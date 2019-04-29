@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DEV environment tests">
+
+    <test name="Feature runner">
+        <classes>
+            <class name="FeatureRunner"/>
+        </classes>
+    </test>
+
+    <test name="Rerun failed tests">
+        <classes>
+            <class name="FailedTestRunner"/>
+        </classes>
+    </test>
+</suite>
