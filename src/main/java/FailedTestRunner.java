@@ -3,7 +3,7 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-        features = "@target/rerun.txt",
+        features = "@src/main/java/rerun.txt",
         glue = "glue",
         plugin = {"pretty",
                 "json:target/cucumber/retries.json"})
