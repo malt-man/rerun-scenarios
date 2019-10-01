@@ -1,9 +1,9 @@
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
-        features = "@src/main/java/rerun.txt",
+        features = "@target/cucumber/rerun.txt",
         glue = "glue",
         plugin = {"pretty",
                 "json:target/cucumber/retries.json"})

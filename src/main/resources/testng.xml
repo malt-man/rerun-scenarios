@@ -1,7 +1,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="DEV environment tests">
 
-    <test name="Rerun failed tests">
+    <test name="Test run">
+        <classes>
+            <class name="TestRunner"/>
+        </classes>
+    </test>
+
+    <test name="Retry">
         <classes>
             <class name="FailedTestRunner"/>
         </classes>

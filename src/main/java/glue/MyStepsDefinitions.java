@@ -1,8 +1,10 @@
 package glue;
 
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.core.api.Scenario;
+import io.cucumber.java.Before;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 
 
 import static org.testng.Assert.*;
@@ -12,10 +14,14 @@ public class MyStepsDefinitions {
 
     private int total;
 
+    @Before()
+    public void setup (Scenario scenario) {
+        System.out.println("Starting scenario: " + scenario.getName());
+    }
+
     @Given("{int} cucumber")
     public void numberofCucumbers(int cucumbers) {
 
-        System.out.println("Starting count of cucumbers");
         total = cucumbers;
     }
 
