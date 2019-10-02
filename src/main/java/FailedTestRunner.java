@@ -1,6 +1,6 @@
 
-import io.cucumber.testng.CucumberOptions;
-import io.cucumber.testng.AbstractTestNGCucumberTests;
+import cucumber.api.CucumberOptions;
+import cucumber.api.testng.AbstractTestNGCucumberTests;
 
 @CucumberOptions(
         features = "@target/cucumber/rerun.txt",
